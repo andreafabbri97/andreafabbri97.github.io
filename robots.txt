@@ -1,0 +1,6 @@
+# robots.txt of andreafabbri97.github.io: it applies to the whole host, so to every project site too.
+# Never block anything here. It only tells search engines where the personal site's sitemap is.
+User-agent: *
+Allow: /
+
+Sitemap: https://andreafabbri97.github.io/andrea-fabbri/sitemap.xml

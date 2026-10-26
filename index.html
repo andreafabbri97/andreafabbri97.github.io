@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The home page of andreafabbri97.github.io. Google takes a site's name only from the home page of its
+         domain or subdomain, never from a folder like /andrea-fabbri/ (developers.google.com/search/docs/
+         appearance/site-names). Until 26/10/2026 this page did not exist, and the results showed «GitHub Pages
+         documentation» above every page of the site. It is a real page, not a redirect: a redirect would send
+         Google to the folder and the name would not be read. -->
+    <title>Andrea Fabbri — ingegnere gestionale freelance</title>
+    <meta name="description" content="Andrea Fabbri, ingegnere gestionale freelance a San Marino: gestionali su misura e automazione con l'intelligenza artificiale. Entra nel sito, in italiano o in inglese." />
+    <link rel="canonical" href="https://andreafabbri97.github.io/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Andrea Fabbri",
+        "alternateName": ["Andrea Fabbri, ingegnere gestionale", "AF"],
+        "url": "https://andreafabbri97.github.io/"
+      }
+    </script>
+    <meta property="og:site_name" content="Andrea Fabbri" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://andreafabbri97.github.io/" />
+    <meta property="og:title" content="Andrea Fabbri — ingegnere gestionale freelance" />
+    <meta property="og:description" content="Gestionali su misura e automazione con l'intelligenza artificiale, da San Marino." />
+    <meta property="og:image" content="https://andreafabbri97.github.io/andrea-fabbri/anteprima.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Google Search Console ownership check (Andrea's account, the same tag as the site): keep it. -->
+    <meta name="google-site-verification" content="5mMiXcCV0CfK620hkf2HrTids6xyH0-70ZXRT2Jzyxo" />
+    <link rel="icon" type="image/svg+xml" href="/andrea-fabbri/favicon.svg" />
+    <link rel="apple-touch-icon" href="/andrea-fabbri/apple-touch-icon.png" />
+    <meta name="theme-color" content="#F3F6F8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0E1822" media="(prefers-color-scheme: dark)" />
+    <!-- Same theme as the site, and the same saved choice: same origin, same localStorage key. -->
+    <script>
+      (function () {
+        var scelta = 'auto';
+        try { scelta = localStorage.getItem('af-tema') || 'auto'; } catch (e) {}
+        var scuro = scelta === 'dark' || (scelta === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        document.documentElement.dataset.tema = scuro ? 'dark' : 'light';
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@50..150,400..900&family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap" rel="stylesheet" />
+    <style>
+      :root, [data-tema='light'] {
+        --carta: 243 246 248; --foglio: 255 255 255; --inchiostro: 18 33 48; --tenue: 86 102 118;
+        --linea: 213 222 230; --azzurro: 28 116 174;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-tema='light']) {
+          --carta: 14 24 34; --foglio: 21 35 48; --inchiostro: 231 238 244; --tenue: 155 174 191;
+          --linea: 38 58 76; --azzurro: 108 195 238;
+        }
+      }
+      [data-tema='dark'] {
+        --carta: 14 24 34; --foglio: 21 35 48; --inchiostro: 231 238 244; --tenue: 155 174 191;
+        --linea: 38 58 76; --azzurro: 108 195 238;
+      }
+      * { box-sizing: border-box; }
+      html { -webkit-tap-highlight-color: transparent; }
+      body {
+        margin: 0; min-height: 100vh; min-height: 100svh; display: grid; place-items: center;
+        background: rgb(var(--carta)); color: rgb(var(--inchiostro));
+        font-family: 'Bricolage Grotesque', 'Segoe UI', system-ui, sans-serif;
+        padding: 32px 16px; overflow-x: hidden;
+      }
+      /* The Monte Titano contour lines of the site, still and faint behind the name. */
+      .curve { position: fixed; inset: 0; width: 100%; height: 100%; pointer-events: none; color: rgb(var(--tenue)); opacity: 0.22; }
+      main { position: relative; width: 100%; max-width: 40rem; text-align: center; }
+      .logo { width: 64px; height: 64px; border-radius: 14px; }
+      h1 {
+        font-family: 'Anybody', 'Bricolage Grotesque', sans-serif; font-variation-settings: 'wdth' 130;
+        font-weight: 800; letter-spacing: -0.01em; line-height: 1;
+        font-size: clamp(2.6rem, 11vw, 5.5rem); margin: 20px 0 12px;
+      }
+      .ruolo { color: rgb(var(--tenue)); font-size: clamp(1rem, 3.6vw, 1.2rem); margin: 0; line-height: 1.5; }
+      .ruolo span { display: block; }
+      nav { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 32px; }
+      nav a {
+        display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border-radius: 999px;
+        font-weight: 600; text-decoration: none; font-size: 1rem; transition: transform 0.15s, background 0.15s;
+      }
+      .primo { background: rgb(var(--inchiostro)); color: rgb(var(--carta)); }
+      .secondo { border: 1px solid rgb(var(--linea)); color: rgb(var(--inchiostro)); background: rgb(var(--foglio)); }
+      nav a:hover { transform: translateY(-1px); }
+      nav a:focus-visible { outline: 2px solid rgb(var(--azzurro)); outline-offset: 3px; }
+      .luogo { margin-top: 36px; font-size: 0.85rem; color: rgb(var(--tenue)); }
+      .luogo b { color: rgb(var(--azzurro)); font-weight: 600; }
+      @media (max-width: 420px) { nav a { width: 100%; justify-content: center; } }
+      @media (prefers-reduced-motion: reduce) { nav a { transition: none; } }
+    </style>
+  </head>
+  <body>
+    <svg class="curve" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2">
+      <g transform="rotate(-34 800 520)">
+        <ellipse cx="800" cy="520" rx="60" ry="34" />
+        <ellipse cx="808" cy="514" rx="140" ry="78" />
+        <ellipse cx="816" cy="508" rx="235" ry="128" />
+        <ellipse cx="826" cy="502" rx="340" ry="184" />
+        <ellipse cx="838" cy="496" rx="455" ry="246" />
+        <ellipse cx="850" cy="490" rx="580" ry="314" />
+        <ellipse cx="864" cy="484" rx="715" ry="388" />
+        <ellipse cx="880" cy="478" rx="860" ry="468" />
+      </g>
+    </svg>
+    <main>
+      <img class="logo" src="/andrea-fabbri/favicon.svg" alt="" width="64" height="64" />
+      <h1>Andrea Fabbri</h1>
+      <p class="ruolo">
+        <span>Ingegnere gestionale freelance, specialista in IA e automazione</span>
+        <span lang="en">Freelance management engineer, AI &amp; automation</span>
+      </p>
+      <nav aria-label="Entra nel sito">
+        <a class="primo" href="/andrea-fabbri/it/">Entra nel sito <span aria-hidden="true">→</span></a>
+        <a class="secondo" href="/andrea-fabbri/" lang="en" hreflang="en">Visit the site (English)</a>
+      </nav>
+      <p class="luogo"><b>San Marino</b> · al lavoro in tutto il mondo</p>
+    </main>
+  </body>
+</html>
