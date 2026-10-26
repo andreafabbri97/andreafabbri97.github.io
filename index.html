@@ -36,10 +36,16 @@
     <!-- Same theme as the site, and the same saved choice: same origin, same localStorage key. -->
     <script>
       (function () {
-        var scelta = 'auto';
-        try { scelta = localStorage.getItem('af-tema') || 'auto'; } catch (e) {}
-        var scuro = scelta === 'dark' || (scelta === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-        document.documentElement.dataset.tema = scuro ? 'dark' : 'light';
+        var sistema = window.matchMedia('(prefers-color-scheme: dark)');
+        var applica = function () {
+          var scelta = 'auto';
+          try { scelta = localStorage.getItem('af-tema') || 'auto'; } catch (e) {}
+          var scuro = scelta === 'dark' || (scelta === 'auto' && sistema.matches);
+          document.documentElement.dataset.tema = scuro ? 'dark' : 'light';
+        };
+        applica();
+        // With the theme on automatic, follow the system when it changes while the page is open.
+        if (sistema.addEventListener) sistema.addEventListener('change', applica);
       })();
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
